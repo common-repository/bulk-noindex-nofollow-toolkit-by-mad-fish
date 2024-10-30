@@ -1,0 +1,136 @@
+div.docTxt p{font-size:16px;}
+.bni-mfd-toggle {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bni-mfd-toggle i {
+  position: relative;
+  display: inline-block;
+  margin-right: .5rem;
+  width: 46px;
+  height: 26px;
+  background-color: #e6e6e6;
+  border-radius: 23px;
+  vertical-align: text-bottom;
+  transition: all 0.3s linear;
+}
+
+.bni-mfd-toggle i::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 42px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+  transition: all 0.25s linear;
+}
+
+.bni-mfd-toggle i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  transform: translate3d(2px, 2px, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.bni-mfd-toggle:active i::after {
+  width: 28px;
+  transform: translate3d(2px, 2px, 0);
+}
+.bni-mfd-toggle:active input:checked + i::after { 
+  transform: translate3d(16px, 2px, 0); 
+}
+.bni-mfd-toggle input { 
+  display: none; 
+}
+.bni-mfd-toggle input:checked + i { 
+  background-color: #70A842; 
+}
+.bni-mfd-toggle input:checked + i::before { 
+  transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0); 
+}
+.bni-mfd-toggle input:checked + i::after { 
+  transform: translate3d(22px, 2px, 0); 
+}
+
+#cb-select-all{
+  margin-left:0px;
+}
+th#checkbox_sel{
+  width:20px;
+}
+form#items-per-page{
+  margin-top: 5px;
+  margin-right: 0px; 
+}
+p.red-clr{
+  color:red;
+  margin-bottom: 40px;
+}
+
+
+
+/* begin tabs */
+
+
+/* Nav tabs*/
+
+
+.tabs-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tabs-nav li {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fefefe;
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: #34495E;
+  margin-right: 5px;
+}
+
+.tabs-nav a {
+  display: block;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #fff;
+}
+/* Active tab */
+
+.tabs-nav li.active {
+  background: #FFF;
+  color: #000;
+}
+
+.tabs-nav li.active a {
+  color: inherit;
+}
+/* Tab content */
+
+.tabs-content {
+  border: 1px solid #34495E;
+  padding: 10px;
+  background: #FFF;
+  margin-top: -7px;
+  overflow: hidden;
+}
+
+.tabs-content IMG {
+  margin-right: 10px;
+}
+/* Hide all but first content div */
+/*
+.tabs-content div:not(:first-child) {
+  display: none;
+} */
